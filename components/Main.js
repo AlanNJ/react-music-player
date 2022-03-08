@@ -95,7 +95,6 @@ export const Main = () => {
 			setIsPlaying(true);
 			startTimer();
 		} else {
-			// Set the isReady ref as true for the next pass
 			isReady.current = true;
 		}
 	}, [trackId]);
