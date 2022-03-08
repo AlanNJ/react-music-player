@@ -39,6 +39,9 @@ export const Buttons = ({
 		});
 		console.log(data.data);
 	};
+	const removeSong = () => {
+		console.log("hell Yeah");
+	};
 	return (
 		<div className="button-container">
 			<AiFillPlusCircle
