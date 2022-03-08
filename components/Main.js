@@ -87,7 +87,7 @@ export const Main = () => {
 	useEffect(() => {
 		audioRef.current.pause();
 		audioRef.current = new Audio(audioSrc);
-		//console.log(audioRef.current);
+		console.log(audioRef.current);
 		setProgress(audioRef.current.currentTime);
 		console.log(isReady.current);
 		if (isReady.current) {
