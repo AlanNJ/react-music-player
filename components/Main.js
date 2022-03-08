@@ -66,6 +66,7 @@ export const Main = () => {
 		if (isPlaying) {
 			audioRef.current.play();
 			startTimer();
+			console.log(audioRef.current.currentTime);
 			setProgress(audioRef.current.currentTime);
 		} else {
 			audioRef.current.pause();
