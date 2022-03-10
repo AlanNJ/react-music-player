@@ -28,6 +28,22 @@ export const Main = () => {
 			image: "string",
 			color: "string",
 		},
+		{
+			id: 2,
+			title: "y2mate.com - Eminem  Higher Official Video Explicit.mp3",
+			artist: "string",
+			audioSrc: "/food_G1U6tlb.mp3",
+			image: "string",
+			color: "string",
+		},
+		{
+			id: 2,
+			title: "y2mate.com - Eminem  Higher Official Video Explicit.mp3",
+			artist: "string",
+			audioSrc: "/food_G1U6tlb.mp3",
+			image: "string",
+			color: "string",
+		},
 	];
 
 	const { title, artist, color, image, audioSrc } = tracks[trackId];
