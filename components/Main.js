@@ -10,6 +10,7 @@ export const Main = () => {
 	const [duration, setDuration] = useState();
 	const [openModal, setOpenModal] = useState(false);
 	const [time, setTime] = useState();
+	const [view, setView] = useState(false);
 
 	const tracks = [
 		{
@@ -52,7 +53,7 @@ export const Main = () => {
 		const audioRef = useRef(new Audio(audioSrc));
 		const intervalRef = useRef();
 		const isReady = useRef(false);
-		//setTime(audioRef.current.duration);
+		setTime(audioRef.current.duration);
 	}
 
 	useEffect(() => {
@@ -140,7 +141,7 @@ export const Main = () => {
 				value={progress}
 				step="1"
 				min="0"
-				max={5}
+				max={time}
 				className="loader"
 				onChange={(e) => changeTime(e.target.value)}
 				onMouseUp={onScrubEnd}
