@@ -23,15 +23,18 @@ export const Buttons = ({
 		document.querySelector(".add-song").click();
 	};
 	const addSong = async (e) => {
-		const audio = e.target.files[0];
-		console.log(audio);
-		const formData = new FormData();
-		formData.append("file", audio);
-		console.log([...formData]);
-		const data = await axios.post("http://localhost:8000/api/upload-music", {
-			formData,
-		});
-		console.log(data.data);
+		try {
+			const audio = e.target.files[0];
+			console.log(audio);
+			const formData = new FormData();
+			formData.append("file", audio);
+			console.log([...formData]);
+			const data = await axios.post("http://localhost:8000/api/upload-music", {
+				formData,
+			});
+		} catch (e) {
+			console.log(e);
+		}
 	};
 	const uploadSong = async (x) => {
 		const data = await axios.post("http://localhost:8000/api/upload-music", {
