@@ -11,6 +11,7 @@ export const Main = () => {
 	const [openModal, setOpenModal] = useState(false);
 	const [time, setTime] = useState();
 	const [view, setView] = useState(false);
+	const [client, setClient] = useState(null);
 
 	const tracks = [
 		{
